@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
+
   <title>Frontend Mentor | Social links profile</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,26 +15,30 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="flex-center flex-column">
 
-  <main>
+  <main class="flex-center">
+    
+    <h1 class="visually-hidden">Social Profiles</h1>
 
-    <article class="social-profile">
+    <article class="social-profile flex-column flex-start-center  rounded-sm">
 
-      <figure>
-        <img src="./assets/images/avatar-jessica.jpeg" alt="Picture of jessica.">
-        <figcaption>Jessica Randall</figcaption>
-      </figure>
+        <h2 class="visually-hidden">Jessica Randall's Social Profile</h2>
 
-      <address>
-        London, United Kingdom <br>
-        example@gmail.com <br>
-      </address>
+        <figure class="txt-center">
+          <img class="rounded-mx" src="./assets/images/avatar-jessica.jpeg" alt="Picture of jessica.">
+          <figcaption>Jessica Randall</figcaption>
+        </figure>
 
-      <p>"Front-end developer and avid reader."</p>
+        <address class="txt-center">
+          London, United Kingdom <br>
+          example@gmail.com
+        </address>
+
+        <p>"Front-end developer and avid reader."</p>
 
       <footer>
-        <nav>
+        <nav class="flex-evenly-center flex-column txt-center">
           <a href="#">GitHub</a>
           <a href="#">Frontend Mentor</a>
           <a href="#">LinkedIn</a>

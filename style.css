@@ -90,7 +90,7 @@ Text Classes
 
 /*
 ============================
-Visibility Classes
+Uncategorized helper classes
 ============================
 */
 
@@ -104,6 +104,10 @@ Visibility Classes
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* Optional, prevents line breaks */
   border: 0;
+}
+
+.transformable {
+  position: relative;
 }
 
 
@@ -231,4 +235,40 @@ Animation Classes for the article socials
 .social-profile footer a:focus {
   background-color: var(--main-color);
   color: var(--opposite-font-color);
+}
+
+.social-profile {
+  animation-name: social-profile;
+  animation-duration: 1.75s;
+}
+
+.social-profile figure,
+.social-profile address,
+.social-profile p,
+.social-profile footer {
+  opacity: 0;
+  animation-name: social-profile-content;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes social-profile {
+  0% {
+    top: -1000px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes social-profile-content {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
 }
